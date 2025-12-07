@@ -1,4 +1,4 @@
-import { createDeck,compareCard,shuffle } from "../utils/deck.js"
+import { createDeck, compareCard, shuffle } from "../utils/deck.js"
 
 export function createPlayer(name = "AI") {
     return { name: name, hand: [], won_pile: [] }
