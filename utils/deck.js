@@ -55,3 +55,9 @@ function shuffle (deck) {
     return deck
 }
 
+
+export {
+    compareCard,
+    createDeck,
+    shuffle
+}
