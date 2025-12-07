@@ -1,3 +1,5 @@
+
+
 export function createPlayer(name = "AI") {
     return { name: name, hand: [], won_pile: [] }
 }
@@ -20,14 +22,14 @@ export function playRound(player_1, player_2) {
     let result = compareCards(p1_card, p2_card)
     if (result == "p1") {
         player_1.won_pile.push(p1_card, p2_card)
-        console.log(`p1 take this round with ${p1_card}`);
+        console.log(`p1 take this round with ${p1_card}\n`);
     }
     else if (result == "p2") {
         player_2.won_pile.push(p1_card, p2_card)
-        console.log(`p2 take this round with ${p2_card}`);
+        console.log(`p2 take this round with ${p2_card}\n`);
     }
     else if (result == "WAR") {
-        console.log(`WAR! the cards are same`);
+        console.log(`WAR! the cards are same\n`);
     }
 }
 
